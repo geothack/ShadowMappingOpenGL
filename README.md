@@ -1,4 +1,4 @@
-An example pf shadow mapping in opengl!
+An example of shadow mapping in opengl!
 
 TO build the project you will need CMake.
 
