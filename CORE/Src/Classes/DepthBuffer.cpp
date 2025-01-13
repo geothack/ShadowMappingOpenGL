@@ -11,7 +11,7 @@ Depthbuffer::~Depthbuffer()
 
 void Depthbuffer::Use(Window& window)
 {
-    glViewport(0, 0, window.GetWidth() - 100, window.GetHeight() - 100);
+    glViewport(0, 0, window.GetWidth() - 100, window.GetHeight() - 100 );
     glBindFramebuffer(GL_FRAMEBUFFER, m_framebuffer);
     glClear(GL_DEPTH_BUFFER_BIT);
     //glEnable(GL_DEPTH_TEST);

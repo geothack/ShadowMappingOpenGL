@@ -35,6 +35,8 @@ void Plane::Init()
 void Plane::Render(Shader& shader)
 {
     glm::mat4 model = glm::mat4(1.0f);
+
+    model = glm::scale(model, glm::vec3(10, 1, 10));
     shader.SetMat4("model", model);
     glBindVertexArray(m_planeVAO);
     glDrawArrays(GL_TRIANGLES, 0, 6);
